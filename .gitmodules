@@ -1,0 +1,4 @@
+[submodule "DigitalEngineeringAEJ/Wepelo"]
+	path = DigitalEngineeringAEJ/Wepelo
+	url = git@github.com:DigitalEngineeringAEJ/Wepelo.git
+	branch = PROD_WEPELO_03
