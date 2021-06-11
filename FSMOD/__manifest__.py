@@ -10,7 +10,7 @@
     'category': 'test',
     'website': 'https://www.eaj.odoo.com',
     'depends' : ['base'],
-    'data': ['security/ir.model.access.csv'
+    'data': ['security/ir.model.access.csv',
         'views/fs_views.xml'
     ],
 
