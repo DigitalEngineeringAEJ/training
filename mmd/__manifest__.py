@@ -1,5 +1,5 @@
 {
-    'name' : 'School Management',
+    'name' : 'MMD',
     'version' : '1.1',
     'summary': 'Test',
     'category': 'Test',
