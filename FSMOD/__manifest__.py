@@ -11,7 +11,7 @@
     'website': 'https://www.eaj.odoo.com',
     'depends' : ['base'],
     'data': [
-
+        'views/fs_views.xml'
     ],
 
     'installable': True,

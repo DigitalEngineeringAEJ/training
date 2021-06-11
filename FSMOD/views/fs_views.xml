@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+  <record id="student_view_form" model="ir.ui.view">
+            <field name="name">fs.model.form</field>
+            <field name="model">fs.model</field>
+            <field name="arch" type="xml">
+                <form string="FS">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="student_view_tree" model="ir.ui.view">
+            <field name="name">fs.model.tree</field>
+            <field name="model">fs.model</field>
+            <field name="arch" type="xml">
+                <tree string="FS">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+    <record id="fs_action_form" model="ir.actions.act_window">
+            <field name="name">FS</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">fs.model</field>
+        </record>
+
+    <menuitem id="fs_model_menu" name="fsModel" action="fs_action_form"/>
+</odoo>
