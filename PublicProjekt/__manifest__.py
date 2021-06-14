@@ -9,7 +9,7 @@ Ermöglicht den Zugang zu seinem Projekt als Public User
     """,
     'category': 'Projekt',
     'website': 'https://www.deaejodoo.com/',
-    'depends' : ['base'],
+    'depends' : ['base', 'website'],
     'data': [
         'views/website_form.xml'
     ],
