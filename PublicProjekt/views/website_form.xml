@@ -25,6 +25,9 @@
                                 <input type="text" name="email_id" t-att-value="email_id" id="email_id"
                                        class="form-control" required="required"/>
                             </div>
+                            <div class="clearfix oe_login_button">
+                                <button type="submit" class="btn-primary pull-left">Mein Gutachten Suchen</button>
+                            </div>
                         </form>
                     </div>
                 </div>
