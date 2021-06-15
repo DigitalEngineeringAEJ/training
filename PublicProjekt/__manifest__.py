@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
-    'name' : 'PubllicProject',
+    'name' : 'PublicProject',
     'version' : '0.1',
     'summary': 'Project Access',
     'description': """
@@ -11,7 +10,8 @@ Ermöglicht den Zugang zu seinem Projekt als Public User
     'website': 'https://www.deaejodoo.com/',
     'depends' : ['base', 'website', 'project'],
     'data': [
-        'views/website_form.xml'
+        'views/website_form.xml',
+        'views/website_form1.xml'
     ],
     'demo': [
 
