@@ -10,8 +10,6 @@ Ermöglicht den Zugang zu seinem Projekt als Public User
     'website': 'https://www.deaejodoo.com/',
     'depends' : ['base', 'website', 'project'],
     'data': [
-        'views/website_form.xml',
-        'views/website_form1.xml',
         'views/list_tasks_views.xml',
     ],
     'demo': [
