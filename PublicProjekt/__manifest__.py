@@ -11,7 +11,8 @@ Ermöglicht den Zugang zu seinem Projekt als Public User
     'depends' : ['base', 'website', 'project'],
     'data': [
         'views/website_form.xml',
-        'views/website_form1.xml'
+        'views/website_form1.xml',
+        'views/list_tasks_views.xml',
     ],
     'demo': [
 

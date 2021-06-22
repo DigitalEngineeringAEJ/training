@@ -14,21 +14,15 @@
             <div id="wrap">
                 <div class="oe_structure">
                     <div class="container">
-                        <form role="form" action="/search/gutachten" method="POST">
-<!--                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>-->
+                        <form role="form" action="/tasks/public" method="POST">
                             <div class="form-group">
-                                <label for="partner_id" class="control-label">Name</label>
-                                <input type="text" name="partner_id" id="partner_id"
-                                       class="form-control" placeholder="Bsp Name" required="required"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="project" class="control-label">Nummer</label>
-                                <input type="char" name="name" id="name"
+                                <label for="number" class="control-label">Nummer</label>
+                                <input type="char" name="number" id="number"
                                        class="form-control" required="required"/>
-                            </div>
-                            <div class="clearfix oe_login_button">
-                                <button type="submit" class="btn-primary pull-left">Mein Gutachten Suchen</button>
-                            </div>
+                                </div>
+                                <div class="clearfix oe_login_button">
+                                    <button type="submit" class="btn-primary pull-left">Mein Gutachten Suchen Test Test</button>
+                                </div>
                         </form>
                     </div>
                 </div>

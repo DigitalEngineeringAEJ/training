@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="menu_projekt_form_task" model="website.menu">
+        <field name="name">Tasks Search</field>
+        <field name="url">/task_search</field>
+        <field name="parent_id" ref="website.main_menu"/>
+        <field name="sequence">55</field>
+    </record>
+
+    <record id="taskSearch" model="ir.ui.view">
+            <field name="name">Task search</field>
+            <field name="type">qweb</field>
+            <field name="key">website.taskSearch</field>
+            <field name="arch" type="xml">
+                <t name="Contact Us" t-name="website.taskSearch">
+                    <t t-call="website.layout">
+                        <div id="wrap">
+                            <div class="oe_structure">
+                                <section class="pt8 pb8">
+                                    <div class="container">
+                                        <div class="row s_nb_column_fixed">
+                                            <div class="col-lg-12 s_title pt16 pb16">
+                                                <h1>Tasks search</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="container mt-2">
+                                <div class="row">
+                                    <form role="form" action="/tasks/public" method="POST">
+<!--                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>-->
+                                    <div class="form-group">
+                                        <label for="number" class="control-label">Nummer</label>
+                                        <input type="char" name="number" id="number"
+                                               class="form-control" required="required"/>
+                                    </div>
+                                    <div class="clearfix oe_login_button">
+                                        <button type="submit" class="btn-primary pull-left">Search</button>
+                                    </div>
+                                </form>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+
+    <record id="task_search_page" model="website.page">
+            <field name="url">/task_search</field>
+            <field name="is_published">True</field>
+            <field name="view_id" ref="taskSearch"/>
+            <field name="track">True</field>
+    </record>
+
+
+
+     <template id="tasks_list" name="Tasks List">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure">
+                    <div class="container">
+                        <t t-if="not res">
+                            <span >Sorry !</span>
+                        </t>
+                        <t t-else="">
+                            <t t-foreach="res" t-as="task">
+                                <div style="background:red !important;">
+                                <span ><t t-esc="task.get('name', '')"/></span>
+                                <span ><t t-esc="task.get('stage_name', '')"/></span>
+                                </div>
+                            </t>
+                        </t>
+
+                    </div>
+                </div>
+            </div>
+        </t>
+    </template>
+
+
+</odoo>
